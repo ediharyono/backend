@@ -48,6 +48,7 @@ app.get('/employees/:id',(req,res)=>{
     if(!err)   
     res.send(rows);  
       //res.send(JSON.stringify({ data: rows })); => membuat JSON menjadi lengkap
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
     else  
         console.log(err);  
       
