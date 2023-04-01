@@ -47,6 +47,7 @@ app.get('/employees/:id',(req,res)=>{
     mysqlConnection.query('SELECT * FROM Employee WHERE id = ?',[req.params.id],(err,rows,fields)=>{  
     if(!err)   
     res.send(rows);  
+      //res.send(JSON.stringify({ data: rows })); => membuat JSON menjadi lengkap
     else  
         console.log(err);  
       
